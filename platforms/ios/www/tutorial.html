@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<title>JQM tutorial</title>
+                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+                <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+                <script src="js/app.js"></script>
+	</head>
+	<body>
+		<button data-role="yazure" data-chod="tarun" id="mainPage" onclick="newFunc()">
+        hello	
+        </button>
+        <div data-role="page" id="firstPage">…
+  <article data-role="content"> 
+    <a href="#secondPage"> go to second Page</a>
+  </article>…
+</div>
+<div data-role="page" id="secondPage">…
+  <article data-role="content">
+    <a href="#firstPage"> go to first Page</a>
+  </article>
+</div>
+
+
+	</body>
+	<script type="text/javascript">
+	var newFunc = function(){
+		var mainPage = document.getElementById("mainPage");
+		//var show=mainPage.data();
+    window.alert(mainPage);
+  };
+  </script>
+</html>
